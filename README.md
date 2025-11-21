@@ -63,6 +63,9 @@ curl -X POST -F "image=@test_image.jpg" https://ocr-api-343321912939.us-central1
 
 ### OCR Service
 - **Google Cloud Vision API** - Chosen for seamless GCP integration and high accuracy text detection
+- Uses `text_detection` method which is optimized for extracting text from images
+- Handles various image qualities, text orientations, and multiple languages automatically
+- Returns full extracted text from the image annotations
 
 ### File Upload and Validation
 - Accepts `multipart/form-data` uploads via FastAPI's `UploadFile`
